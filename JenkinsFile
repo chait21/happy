@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("SCM"){
             steps{
-                git" "
+                git"https://github.com/chait21/happy.git "
             }
         }
        stage("Build"){
