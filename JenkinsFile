@@ -4,12 +4,12 @@ pipeline{
     stages{
         stage("SCM"){
             steps{
-                git"https://github.com/chait21/happy.git "
+                git "https://github.com/chait21/happy.git "
             }
         }
        stage("Build"){
             steps{
-                sh " mvn clean package "
+                sh ' mvn clean package '
             }
         }
     }
